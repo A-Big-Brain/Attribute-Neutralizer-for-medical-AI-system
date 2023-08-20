@@ -68,6 +68,8 @@ The generated X-ray images are stored as a **numpy** array file in the new folde
 ````
 (dataset name)_(edite_degree×100).npy
 ````
+such as **ChestX-ray14_50.npy**.
+
 You can change the hyperparameter **edite_degree** to another value, and the generated X-ray images are also stored in the folder.
 
 ## AI judge
