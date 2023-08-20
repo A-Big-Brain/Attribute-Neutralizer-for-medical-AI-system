@@ -48,7 +48,7 @@ The running result, model parameters, and output images are stored in the new fo
 
 ## AI judge
 
-All code of the AI judge is in the folder "AI_judge/py_script/", and the result of the AI judge after each run is stored in the folder "AI_judge/save_results/". All hyperparameters can be configured in the file "AI_judge/py_script/support_args.py". Train a AI_judge:
+All code of the AI judge is in the folder "AI_judge/py_script/", and the result of the AI judge after each run is stored in the folder "AI_judge/save_results/". All hyperparameters can be configured in the file "AI_judge/py_script/support_args.py". Train an AI_judge:
 ````python
 python main.py
 ````
@@ -60,9 +60,13 @@ such as: "ChestX-ray14_gender_2_25_5_20_20_xEnS", "MIMIC_gender_2_25_5_20_20_aON
 
 The running result and model parameters are stored in the new folder.
 
-
-
 ## Disease diagnosis model
+
+All code of the disease diagnosis model is in the folder "disease_diagnosis_model/py_script/", and the result of the disease diagnosis model after each run is stored in the folder "disease_diagnosis_model/save_results/". All hyperparameters can be configured in the file "disease_diagnosis_model/py_script/support_args.py". Train a disease diagnosis model:
+````python
+python main.py
+````
+After the training is finished, A folder will be created in the folder "disease_diagnosis_model/save_results/". The name of the new folder is the same as that of the folder in the Turing modifier.
 
 
 
