@@ -26,14 +26,37 @@ Initially, you should download the datasets. Following that, you are required to
 |*_info|N×M|the metadata for each X-ray image. the attribute is included in the file|
 |*_lab|N×K|the label of each X-ray image|
 |*_lab_na|K|the name of each label|
-|*div|N|the training/validation/test indexes of all X-ray images|
+|*_div|N|the training/validation/test indexes of all X-ray images|
 
+note: "N" is the number of X-ray images, "M" is the number of metadata variables, and "K" is the number of findings in each dataset.
 
+Some X-ray images in jpg format are put in the folder "dataset_images".
 
 ## Turing modifier
 
-All code of the Turing modifier is in the folder "Turing_modifier/py_script/"
+All code of the Turing modifier is in the folder "Turing_modifier/py_script/". 
 
-先整体介绍，然后再介绍文件结构
-需要的python包
-把变化视频加上
+
+## AI judge
+
+
+
+
+
+## Disease diagnosis model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
