@@ -62,8 +62,13 @@ Next, we should use the trained Turing modifier to generate attribute-neutral X-
 ````python
 python generate_with_degree.py
 ````
-After the running is finished, a new folder will be created under the folder **dataset_images**. The generated X-ray images are stored as a **numpy** array file in the new folder.
+After the running is finished, a new folder will be created under the folder **dataset_images**. the name of the new folder is the same as that in the folder **Turing_modifier/save_results/**.
 
+The generated X-ray images are stored as a **numpy** array file in the new folder. The name of the array file is in the following formate:
+````
+(dataset name)_(edite_degree×100).npy
+````
+You can change the hyperparameter **edite_degree** to another value, and the generated X-ray images are also stored in the folder.
 
 ## AI judge
 
