@@ -34,7 +34,16 @@ Some X-ray images in jpg format are put in the folder "dataset_images".
 
 ## Turing modifier
 
-All code of the Turing modifier is in the folder "Turing_modifier/py_script/", and the result of the Turing modifier after each run is stored in the folder "Turing_modifier/save_results/". All hyperparameters can be configured in the file "Turing_modifier/py_script/support_args.py". 
+All code of the Turing modifier is in the folder "Turing_modifier/py_script/", and the result of the Turing modifier after each run is stored in the folder "Turing_modifier/save_results/". All hyperparameters can be configured in the file "Turing_modifier/py_script/support_args.py". Train a Turing modifier:
+````python
+python train.py
+````
+After the training is finished, A folder will be created in the folder "Turing_modifier/save_results/". The name of the new folder is in the following format:
+
+(dataset name) _ (modified attribute 1) _ (modified attribute 2) _ (batch size) _ (epochs) _ (lambda_1) _ (lambda_2) _ (update_lambda_rate) _ (four random characters)
+
+such as: "CheXpert_gender_age_3_50_100.0_10.0_0.0_AITu", "MIMIC_gender_age_race_3_2_100.0_10.0_0.0_qVR8".
+
 
 
 ## AI judge
