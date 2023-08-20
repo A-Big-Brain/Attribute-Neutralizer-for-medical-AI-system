@@ -39,16 +39,26 @@ All code of the Turing modifier is in the folder "Turing_modifier/py_script/", a
 python train.py
 ````
 After the training is finished, A folder will be created in the folder "Turing_modifier/save_results/". The name of the new folder is in the following format:
-
-(dataset name) _ (modified attribute 1) _ (modified attribute 2) _ (batch size) _ (epochs) _ (lambda_1) _ (lambda_2) _ (update_lambda_rate) _ (four random characters)
-
+````
+(dataset name)_(modified attribute 1)_(modified attribute 2)_(batch size)_(epochs)_(lambda_1)_(lambda_2)_(update_lambda_rate)_(four random characters)
+````
 such as: "CheXpert_gender_age_3_50_100.0_10.0_0.0_AITu", "MIMIC_gender_age_race_3_2_100.0_10.0_0.0_qVR8".
 
-
+The running result, model parameters, and output images are stored in the new folder.
 
 ## AI judge
 
+All code of the AI judge is in the folder "AI_judge/py_script/", and the result of the AI judge after each run is stored in the folder "AI_judge/save_results/". All hyperparameters can be configured in the file "AI_judge/py_script/support_args.py". Train a AI_judge:
+````python
+python main.py
+````
+After the training is finished, A folder will be created in the folder "AI_judge/save_results/". The name of the new folder is in the following format:
+````
+(dataset name)_(identified attribute)_(model ID)_(batch size)_(epochs)_(training iteration)_(test iteration)_(four random characters)
+````
+such as: "ChestX-ray14_gender_2_25_5_20_20_xEnS", "MIMIC_gender_2_25_5_20_20_aONW".
 
+The running result and model parameters are stored in the new folder.
 
 
 
