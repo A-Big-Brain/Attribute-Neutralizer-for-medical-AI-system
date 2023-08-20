@@ -64,7 +64,7 @@ python generate_with_degree.py
 ````
 After the running is finished, a new folder will be created under the folder **dataset_images**. the name of the new folder is the same as that in the folder **Turing_modifier/save_results/**.
 
-The generated X-ray images are stored as a **numpy** array file in the new folder. The name of the array file is in the following formate:
+The generated X-ray images are stored as a **numpy** array file in the new folder. The name of the array file is in the following format:
 ````
 (dataset name)_(edite_degree×100).npy
 ````
