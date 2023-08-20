@@ -19,7 +19,7 @@ There are three chest X-ray image datasets involved in our project: ChestX-ray14
 |MIMIC-CXR|https://physionet.org/content/mimic-cxr-jpg/2.0.0/|
 |CheXpert|https://stanfordmlgroup.github.io/competitions/chexpert/|
 
-Initially, you should download the datasets. Following that, you are required to preprocess each dataset into five numpy array files, which should be placed within the designated "test_data" folder. For the purpose of code testing, we have included smaller-scale files. To fully unleash the capabilities of the Turing modifier, the complete dataset needs to be downloaded. The five essential array files are:
+Initially, you should download the datasets. Following that, you are required to preprocess each dataset into five numpy array files, which should be placed within the designated **test_data** folder. For the purpose of code testing, we have included smaller-scale files. To fully unleash the capabilities of the Turing modifier, the complete dataset needs to be downloaded. The five essential array files are:
 |File name|shape|note|
 |--------------|------------|--------------|
 |*_img.npy|N×256×256|X-ray image data|
@@ -28,45 +28,45 @@ Initially, you should download the datasets. Following that, you are required to
 |*_lab_na|K|the name of each label|
 |*_div|N|the training/validation/test indexes of all X-ray images|
 
-note: "N" is the number of X-ray images, "M" is the number of metadata variables, and "K" is the number of findings in each dataset.
+note: **N** is the number of X-ray images, **M** is the number of metadata variables, and **K** is the number of findings in each dataset.
 
-Some X-ray images in jpg format are put in the folder "dataset_images".
+Some X-ray images in jpg format are put in the folder **dataset_images**.
 
 ## Turing modifier
 
-All code of the Turing modifier is in the folder "Turing_modifier/py_script/", and the result of the Turing modifier after each run is stored in the folder "Turing_modifier/save_results/". All hyperparameters can be configured in the file "Turing_modifier/py_script/support_args.py". Train a Turing modifier:
+All code of the Turing modifier is in the folder **Turing_modifier/py_script/**, and the result of the Turing modifier after each run is stored in the folder **Turing_modifier/save_results/**. All hyperparameters can be configured in the file **Turing_modifier/py_script/support_args.py**. Train a Turing modifier:
 ````python
 python train.py
 ````
-After the training is finished, A folder will be created in the folder "Turing_modifier/save_results/". The name of the new folder is in the following format:
+After the training is finished, A folder will be created in the folder **Turing_modifier/save_results/**. The name of the new folder is in the following format:
 ````
 (dataset name)_(modified attribute 1)_(modified attribute 2)_(batch size)_(epochs)_(lambda_1)_(lambda_2)_(update_lambda_rate)_(four random characters)
 ````
-such as: "CheXpert_gender_age_3_50_100.0_10.0_0.0_AITu", "MIMIC_gender_age_race_3_2_100.0_10.0_0.0_qVR8".
+such as: **CheXpert_gender_age_3_50_100.0_10.0_0.0_AITu**, **MIMIC_gender_age_race_3_2_100.0_10.0_0.0_qVR8**.
 
 The running result, model parameters, and output images are stored in the new folder.
 
 ## AI judge
 
-All code of the AI judge is in the folder "AI_judge/py_script/", and the result of the AI judge after each run is stored in the folder "AI_judge/save_results/". All hyperparameters can be configured in the file "AI_judge/py_script/support_args.py". Train an AI_judge:
+All code of the AI judge is in the folder **AI_judge/py_script/**, and the result of the AI judge after each run is stored in the folder **AI_judge/save_results/**. All hyperparameters can be configured in the file **AI_judge/py_script/support_args.py**. Train an AI_judge:
 ````python
 python main.py
 ````
-After the training is finished, A folder will be created in the folder "AI_judge/save_results/". The name of the new folder is in the following format:
+After the training is finished, A folder will be created in the folder **AI_judge/save_results/**. The name of the new folder is in the following format:
 ````
 (dataset name)_(identified attribute)_(model ID)_(batch size)_(epochs)_(training iteration)_(test iteration)_(four random characters)
 ````
-such as: "ChestX-ray14_gender_2_25_5_20_20_xEnS", "MIMIC_gender_2_25_5_20_20_aONW".
+such as: **ChestX-ray14_gender_2_25_5_20_20_xEnS**, **MIMIC_gender_2_25_5_20_20_aONW**.
 
 The running result and model parameters are stored in the new folder.
 
 ## Disease diagnosis model
 
-All code of the disease diagnosis model is in the folder "disease_diagnosis_model/py_script/", and the result of the disease diagnosis model after each run is stored in the folder "disease_diagnosis_model/save_results/". All hyperparameters can be configured in the file "disease_diagnosis_model/py_script/support_args.py". Train a disease diagnosis model:
+All code of the disease diagnosis model is in the folder **disease_diagnosis_model/py_script/**, and the result of the disease diagnosis model after each run is stored in the folder **disease_diagnosis_model/save_results/**. All hyperparameters can be configured in the file **disease_diagnosis_model/py_script/support_args.py**. Train a disease diagnosis model:
 ````python
 python main.py
 ````
-After the training is finished, A folder will be created in the folder "disease_diagnosis_model/save_results/". The name of the new folder is the same as that of the folder in the Turing modifier.
+After the training is finished, A folder will be created in the folder **disease_diagnosis_model/save_results/**. The name of the new folder is the same as that of the folder in the Turing modifier.
 
 
 
