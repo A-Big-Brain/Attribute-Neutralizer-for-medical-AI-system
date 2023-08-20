@@ -21,7 +21,7 @@ There are three chest X-ray image datasets involved in our project: ChestX-ray14
 |MIMIC-CXR|https://physionet.org/content/mimic-cxr-jpg/2.0.0/|
 |CheXpert|https://stanfordmlgroup.github.io/competitions/chexpert/|
 
-Initially, you should download the datasets. Following that, you are required to preprocess each dataset into five numpy array files, which should be placed within the designated **test_data** folder. For the purpose of code testing, we have included smaller-scale files. To fully unleash the capabilities of the Turing modifier, the complete dataset needs to be downloaded. The five essential array files are:
+Initially, you should download the datasets. Following that, you are required to preprocess each dataset into five **numpy** array files, which should be placed within the designated **test_data** folder. For the purpose of code testing, we have included smaller-scale files. To fully unleash the capabilities of the Turing modifier, the complete dataset needs to be downloaded. The five essential array files are:
 |File name|Shape|Note|
 |--------------|------------|--------------|
 |*_img.npy|N×256×256|X-ray image data|
@@ -33,6 +33,14 @@ Initially, you should download the datasets. Following that, you are required to
 note: **N** is the number of X-ray images, **M** is the number of metadata variables, and **K** is the number of findings in each dataset.
 
 Some X-ray images in jpg format are put in the folder **dataset_images**.
+
+## Main python packages
+**numpy
+torch
+torchvision
+argparse
+pickle**
+
 
 ## Turing modifier
 
