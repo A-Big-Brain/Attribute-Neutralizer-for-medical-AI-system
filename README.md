@@ -35,11 +35,11 @@ note: **N** is the number of X-ray images, **M** is the number of metadata varia
 Some X-ray images in jpg format are put in the folder **dataset_images**.
 
 ## Main python packages
-**numpy
-torch
-torchvision
-argparse
-pickle**
+**numpy**
+**torch**
+**torchvision**
+**argparse**
+**pickle**
 
 
 ## Turing modifier
