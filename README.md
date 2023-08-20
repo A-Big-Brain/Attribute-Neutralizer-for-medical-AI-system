@@ -88,11 +88,15 @@ The running result and model parameters are stored in the new folder.
 
 ## Disease diagnosis model
 
-All code of the disease diagnosis model is in the folder **disease_diagnosis_model/py_script/**, and the result of the disease diagnosis model after each run is stored in the folder **disease_diagnosis_model/save_results/**. All hyperparameters can be configured in the file **disease_diagnosis_model/py_script/support_args.py**. Train a disease diagnosis model:
+All code of the disease diagnosis model is in the folder **disease_diagnosis_model/py_script/**, and the result of the disease diagnosis model after each run is stored in the folder **disease_diagnosis_model/save_results/**. All hyperparameters can be configured in the file **disease_diagnosis_model/py_script/support_args.py**.
+
+Train a disease diagnosis model:
 ````python
 python main.py
 ````
-After the training is finished, A folder will be created in the folder **disease_diagnosis_model/save_results/**. The name of the new folder is the same as that of the folder in the Turing modifier.
+In **main.py**, the most important parameter is the **fo_li**, which contains the folder of the neutral X-ray images.
+
+After the training is finished, A folder will be created in the folder **disease_diagnosis_model/save_results/**. The name of the new folder is the same as that of the folder in the **fo_li**.
 
 
 
