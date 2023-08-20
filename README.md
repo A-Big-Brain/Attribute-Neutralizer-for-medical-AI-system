@@ -10,8 +10,29 @@ https://github.com/A-Big-Brain/Turing-modifier-for-medical-AI-system/assets/1425
 
 This project encompasses three core components: the Turing modifier, the AI judge for the Turing test, and the disease diagnosis model. The Turing modifier's role is to produce attribute-neutral X-ray images. The AI judge, on the other hand, is tasked with discerning the original attributes of the modified X-ray images. Concurrently, the disease diagnosis model is trained using attribute-neutral X-ray images and serves to identify the findings within the X-ray images. Subsequently, we will provide detailed introductions to each of these three components.
 
+## Chest X-ray image datasets
+ 
+There are three chest X-ray image datasets involved in our project: ChestX-ray14, MIMIC-CXR, and CheXpert. They can be accessed by the following links:
+|Dataset|link|
+|--------------|------------|
+|ChestX-ray14|https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/36938765345|
+|MIMIC-CXR|https://physionet.org/content/mimic-cxr-jpg/2.0.0/|
+|CheXpert|https://stanfordmlgroup.github.io/competitions/chexpert/|
+
+Initially, you should download the datasets. Following that, you are required to preprocess each dataset into five numpy array files, which should be placed within the designated "test_data" folder. For the purpose of code testing, we have included smaller-scale files. To fully unleash the capabilities of the Turing modifier, the complete dataset needs to be downloaded. The five essential array files are:
+|File name|shape|note|
+|--------------|------------|--------------|
+|*_img.npy|N×256×256|X-ray image data|
+|*_info|N×M|the metadata for each X-ray image. the attribute is included in the file|
+|*_lab|N×K|the label of each X-ray image|
+|*_lab_na|K|the name of each label|
+|*div|N|the training/validation/test indexes of all X-ray images|
+
+
+
 ## Turing modifier
 
+All code of the Turing modifier is in the folder "Turing_modifier/py_script/"
 
 先整体介绍，然后再介绍文件结构
 需要的python包
