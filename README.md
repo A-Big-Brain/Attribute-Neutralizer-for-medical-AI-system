@@ -20,7 +20,7 @@ There are three chest X-ray image datasets involved in our project: ChestX-ray14
 |CheXpert|https://stanfordmlgroup.github.io/competitions/chexpert/|
 
 Initially, you should download the datasets. Following that, you are required to preprocess each dataset into five numpy array files, which should be placed within the designated **test_data** folder. For the purpose of code testing, we have included smaller-scale files. To fully unleash the capabilities of the Turing modifier, the complete dataset needs to be downloaded. The five essential array files are:
-|File name|shape|note|
+|File name|Shape|Note|
 |--------------|------------|--------------|
 |*_img.npy|N×256×256|X-ray image data|
 |*_info|N×M|the metadata for each X-ray image. the attribute is included in the file|
@@ -67,17 +67,6 @@ All code of the disease diagnosis model is in the folder **disease_diagnosis_mod
 python main.py
 ````
 After the training is finished, A folder will be created in the folder **disease_diagnosis_model/save_results/**. The name of the new folder is the same as that of the folder in the Turing modifier.
-
-
-
-
-
-
-
-
-
-
-
 
 
 
