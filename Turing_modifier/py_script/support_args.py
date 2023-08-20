@@ -7,8 +7,8 @@ def parse(args=None, test=None):
 
     parser.add_argument('--attrs', dest='attrs', default=attrs_default, nargs='+', help='attributes to learn')
     parser.add_argument('--img_size', dest='img_size', type=int, default=256)
-    parser.add_argument('--shortcut_layers', dest='shortcut_layers', type=int, default=1)
-    parser.add_argument('--inject_layers', dest='inject_layers', type=int, default=4)
+    parser.add_argument('--shortcut_layers', dest='shortcut_layers', type=int, default=0)
+    parser.add_argument('--inject_layers', dest='inject_layers', type=int, default=0)
     parser.add_argument('--dis_fc_dim', dest='dis_fc_dim', type=int, default=1024)
     parser.add_argument('--enc_layers', dest='enc_layers', type=int, default=5)
     parser.add_argument('--dec_layers', dest='dec_layers', type=int, default=5)
@@ -21,14 +21,14 @@ def parse(args=None, test=None):
     parser.add_argument('--dec_acti', dest='dec_acti', type=str, default='relu')
     parser.add_argument('--dis_acti', dest='dis_acti', type=str, default='lrelu')
     parser.add_argument('--dis_fc_acti', dest='dis_fc_acti', type=str, default='lrelu')
-    parser.add_argument('--lambda_1', dest='lambda_1', type=float, default=100.0)
-    parser.add_argument('--lambda_2', dest='lambda_2', type=float, default=10.0)
+    parser.add_argument('--lambda_1', dest='lambda_1', type=float, default=1.0)
+    parser.add_argument('--lambda_2', dest='lambda_2', type=float, default=1.0)
     parser.add_argument('--lambda_3', dest='lambda_3', type=float, default=1.0)
-    parser.add_argument('--lambda_gp', dest='lambda_gp', type=float, default=10.0)
+    parser.add_argument('--lambda_gp', dest='lambda_gp', type=float, default=1.0)
     parser.add_argument('--update_lambda_rate', dest='update_lambda_rate', type=float, default=0.0)
 
     parser.add_argument('--num_workers', dest='num_workers', type=int, default=0)
-    parser.add_argument('--lr', dest='lr', type=float, default=0.0001, help='learning rate')
+    parser.add_argument('--lr', dest='lr', type=float, default=0.01, help='learning rate')
     parser.add_argument('--beta1', dest='beta1', type=float, default=0.5)
     parser.add_argument('--beta2', dest='beta2', type=float, default=0.999)
     parser.add_argument('--n_d', dest='n_d', type=int, default=5, help='# of d updates per g update')
@@ -41,7 +41,7 @@ def parse(args=None, test=None):
 
     parser.add_argument('--conf_num', type=int, default=12)
     parser.add_argument('--train_aga_num', type=int, default=3)
-    parser.add_argument('--edite_degree', type=float, default=0.5)
+    parser.add_argument('--edite_degree', type=float, default=0.0)
 
     parser.add_argument('--enc_dim', dest='enc_dim', type=int, default=64)
     parser.add_argument('--dec_dim', dest='dec_dim', type=int, default=64)
