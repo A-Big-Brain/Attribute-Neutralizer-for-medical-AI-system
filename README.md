@@ -36,9 +36,13 @@ Some X-ray images in jpg format are put in the folder **dataset_images**.
 
 ## Main python packages
 **numpy**
+
 **torch**
+
 **torchvision**
+
 **argparse**
+
 **pickle**
 
 
