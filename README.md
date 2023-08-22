@@ -6,8 +6,7 @@ In practice, the Turing modifier achieves attribute neutrality in X-ray images b
 
 The subsequent video provides an introduction to the Turing modifier's performance in altering single or multiple attributes of X-ray images.
 
-
-https://github.com/A-Big-Brain/Turing-modifier-for-medical-AI-system/assets/142569940/c814baa5-eced-40f3-94d2-8826d4c87908
+https://github.com/A-Big-Brain/Turing-modifier-for-medical-AI-system/assets/142569940/635c7ce0-1e17-41aa-b087-54f53434679f
 
 
 This project encompasses three core components: the Turing modifier, the AI judge for the Turing test, and the disease diagnosis model. The Turing modifier's role is to produce attribute-neutral X-ray images. The AI judge, on the other hand, is tasked with discerning the original attributes of the modified X-ray images. Concurrently, the disease diagnosis model is trained using attribute-neutral X-ray images and serves to identify the findings within the X-ray images. Subsequently, we will provide detailed introductions to each of these three components.
