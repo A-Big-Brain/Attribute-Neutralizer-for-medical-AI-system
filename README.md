@@ -98,7 +98,9 @@ In **main.py**, the most important parameter is the **fo_li**, which contains th
 
 After the training is finished, A folder will be created in the folder **disease_diagnosis_model/save_results/**. The name of the new folder is the same as that of the folder in the **fo_li**.
 
+## Acknowledgements
 
+We express gratitude to Zhenliang He, one of the creators of AttGAN, for his insightful discussions. It's worth noting that a portion of the Turing modifier code draws inspiration from Elvis Yu-Jing Lin's work (https://github.com/elvisyjlin/AttGAN-PyTorch), for which we extend our gratitude.
 
 
 
