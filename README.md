@@ -1,5 +1,7 @@
 # Turing-modifier-for-medical-AI-system
 
+![fig](https://github.com/A-Big-Brain/Turing-modifier-for-medical-AI-system/assets/142569940/c0928168-2f78-40b4-8893-1451f3c5d45e)
+
 The Turing modifier presents an innovative framework that we have devised to enhance the fairness of medical AI systems. This approach facilitates the transformation of original X-ray images into attribute-neutral X-ray images. In comparison to unaltered X-ray images, training medical AI systems on attribute-neutral X-ray images can yield enhanced fairness.
 
 In practice, the Turing modifier achieves attribute neutrality in X-ray images by modifying the image's attributes. The parameter α within the Turing modifier governs the extent of attribute alteration in an X-ray image, ranging from 0 to 1. When α equals 0, the Turing modifier refrains from altering the attribute. In contrast, an α value of 1 results in the attribute being edited to its opposite counterpart in the original image, such as changing from female to male or from young to old. Attribute-neutral X-ray images are created at α=0.5.
