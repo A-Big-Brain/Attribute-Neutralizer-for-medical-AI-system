@@ -25,9 +25,9 @@ Initially, you should download the datasets. Following that, you are required to
 |File name|Shape|Note|
 |--------------|------------|--------------|
 |*_img.npy|N×256×256|X-ray image data|
-|*_info|N×M|the metadata for each X-ray image. The attribute is included in the file|
-|*_lab|N×K|the label of each X-ray image|
-|*_lab_na|K|the name of each label|
+|*_info|N×M|The metadata for each X-ray image. The attribute is included in the file|
+|*_lab|N×K|The label of each X-ray image|
+|*_lab_na|K|The name of each label|
 |*_div|N|the training/validation/test indexes of all X-ray images|
 
 note: **N** is the number of X-ray images, **M** is the number of metadata variables, and **K** is the number of findings in each dataset.
