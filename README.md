@@ -1,4 +1,4 @@
-# Turing-modifier-for-medical-AI-system
+# Turing Neutralizer for medical AI system
 
 ![fig](https://github.com/A-Big-Brain/Turing-modifier-for-medical-AI-system/assets/142569940/c0928168-2f78-40b4-8893-1451f3c5d45e)
 
@@ -25,7 +25,7 @@ Initially, you should download the datasets. Following that, you are required to
 |File name|Shape|Note|
 |--------------|------------|--------------|
 |*_img.npy|N×256×256|X-ray image data|
-|*_info|N×M|the metadata for each X-ray image. the attribute is included in the file|
+|*_info|N×M|the metadata for each X-ray image. The attribute is included in the file|
 |*_lab|N×K|the label of each X-ray image|
 |*_lab_na|K|the name of each label|
 |*_div|N|the training/validation/test indexes of all X-ray images|
