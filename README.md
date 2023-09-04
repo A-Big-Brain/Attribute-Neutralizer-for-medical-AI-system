@@ -1,6 +1,6 @@
 # Turing Neutralizer for medical AI system
 
-![fig](https://github.com/A-Big-Brain/Turing-modifier-for-medical-AI-system/assets/142569940/c0928168-2f78-40b4-8893-1451f3c5d45e)
+![fig](https://github.com/A-Big-Brain/Turing-neutralizer-for-medical-AI-system/assets/142569940/e401a133-e776-411b-a8b4-9ac80d44caee)
 
 The Turing neutralizer presents an innovative framework that we have devised to enhance the fairness of medical AI systems. This approach facilitates the transformation of original X-ray images into attribute-neutral X-ray images. In comparison to unaltered X-ray images, training medical AI systems on attribute-neutral X-ray images can yield enhanced fairness.
 
