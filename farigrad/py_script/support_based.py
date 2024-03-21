@@ -7,15 +7,9 @@ from sklearn.metrics import confusion_matrix
 from sklearn import metrics
 
 
-if os.path.isdir('/home/hulianting/Projects/'):
-    path = '/home/hulianting/Projects/Project12_unfairness/'
-elif os.path.isdir('E:/Project12_unfairness/'):
-    path = 'E:/Project12_unfairness/'
-else:
-    path = '/share/home/hulianting/Project/Project12_unfairness/'
-da_pa = path + 'Data/Xray_np/'
-mo_pa = path + 'Model/model34_farigrad_ours/'
-
+path = '../../'
+da_pa = path + 'test_data/'
+mo_pa = path + 'AI_judge/'
 
 def com_mul_str(str_li):
     str_li = str_li + [''.join(random.sample(string.ascii_letters + string.digits, 4))]
