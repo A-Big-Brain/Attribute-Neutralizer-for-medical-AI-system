@@ -1,4 +1,4 @@
-# attribute neutralizer for medical AI system
+# Attribute neutralizer for medical AI system
 
 ![fig](https://github.com/A-Big-Brain/Turing-neutralizer-for-medical-AI-system/assets/142569940/e401a133-e776-411b-a8b4-9ac80d44caee)
 
@@ -48,7 +48,7 @@ Some X-ray images in jpg format are put in the folder **dataset_images**.
 
 ## attribute neutralizer
 
-All code of the attribute neutralizer is in the folder **Turing_modifier/py_script/**, and the result of the attribute neutralizer after each run is stored in the folder **Turing_modifier/save_results/**. All hyperparameters can be configured in the file **Turing_modifier/py_script/support_args.py**. Train a attribute neutralizer:
+All code of the attribute neutralizer is in the folder **Turing_modifier/py_script/**, and the result of the attribute neutralizer after each run is stored in the folder **Turing_modifier/save_results/**. All hyperparameters can be configured in the file **Turing_modifier/py_script/support_args.py**. Train an attribute neutralizer:
 ````python
 python train.py
 ````
