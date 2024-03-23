@@ -9,7 +9,9 @@ In practice, the attribute neutralizer achieves attribute neutrality in X-ray im
 
 The subsequent video provides an introduction to the attribute neutralizer's performance in altering single or multiple attributes of X-ray images.
 
-https://github.com/A-Big-Brain/Turing-neutralizer-for-medical-AI-system/assets/142569940/fb6d6642-97cd-4d76-ab10-747d0a0bc082
+
+https://github.com/A-Big-Brain/Attribute-Neutralizer-for-medical-AI-system/assets/142569940/694655de-71d9-4132-a228-5f7703bf000c
+
 
 This project encompasses three core components: the attribute neutralizer, the AI judge for the Turing test, and the disease diagnosis model. The attribute neutralizer's role is to produce attribute-neutral X-ray images. The AI judge, on the other hand, is tasked with discerning the original attributes of the modified X-ray images. Concurrently, the disease diagnosis model is trained using attribute-neutral X-ray images and serves to identify the findings within the X-ray images. Subsequently, we will provide detailed introductions to each of these three components.
 
